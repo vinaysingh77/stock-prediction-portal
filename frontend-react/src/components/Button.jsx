@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Button = (props) => {
   return (
@@ -6,9 +7,9 @@ const Button = (props) => {
       {/* <a className="btn btn-info text-light" href="">
         login
       </a> */}
-      <a className={`btn ${props.class} text-light`} href="">
+      <Link className={`btn ${props.class} text-light`} to={props.url}>
         {props.text}
-      </a>
+      </Link>
     </>
   );
 };
